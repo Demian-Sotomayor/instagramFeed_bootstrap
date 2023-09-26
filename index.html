@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css">
+        <title>Instagram Photo Feed</title>
+    </head>
+    <body>
+
+        <!-- ________ Barra de navegación ________ -->
+        <nav class="navbar fixed-top navbar-light bg-light">
+
+            <span class="navbar-brand mb-0 ml-5 h1"><i class="fab fa-instagram"></i> Instagram</span>
+            <form class="form-inline">
+                
+                <button data-toggle="modal" data-target="#exampleModal" class="btn btn-success" 
+                type="button">Create a new post</button>
+
+                <div class="btn-group">
+
+                    <button type="button" class="btn btn-secondary dropdown-toggle ml-3" data-toggle="dropdown" 
+                    aria-haspopup="true" aria-expanded="false">
+                        <i class="fas fa-cog"></i>
+                    </button>
+
+                    <div class="dropdown-menu dropdown-menu-right">
+                        <a class="dropdown-item" href="#">Profile</a>
+                        <a class="dropdown-item" href="#">Accesibility</a>
+                        <a class="dropdown-item" href="#">Privacy and data</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item text-danger" href="#">Log out</a>
+                    </div>
+                
+                </div>
+            </form>
+        </nav>
+
+        <!-- ________ Cambio de feed ________ -->
+        <nav aria-label="Page navigation example" class="margen">
+
+            <ul class="pagination justify-content-center">
+                <li class="page-item"><a class="page-link text-secondary" href="index.html">
+                    <i class="fas fa-th"></i></a>
+                </li>
+                <li class="page-item"><a class="page-link text-secondary" href="feed.html">■</a></li>
+            </ul>
+
+        </nav>
+
+        <!-- ________ Grid imagenes ________ -->
+        <div class="container-fluid d-flex justify-content-around">
+    
+            <div class="row d-flex grid__img">
+    
+                <div class="col-4">
+                    <div class="thumbnail">
+                        <img src="https://images.unsplash.com/photo-1695217765865-7c0a7f211de7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80" alt="post1">
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="thumbnail">
+                        <img src="https://plus.unsplash.com/premium_photo-1695203199983-d061c85f0bdd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2002&q=80" alt="post2">
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="thumbnail">
+                        <img src="https://images.unsplash.com/photo-1628557044797-f21a177c37ec?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80" alt="post3">
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="thumbnail">
+                        <img src="https://images.unsplash.com/photo-1694679861915-e06c81b1ca04?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80" alt="post4">
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="thumbnail">
+                        <img src="https://images.unsplash.com/photo-1493193218435-eb21654c7df6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="post5">
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="thumbnail">
+                        <img src="https://images.unsplash.com/photo-1695039579446-efb905d6efd0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2127&q=80" alt="post6">
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="thumbnail">
+                        <img src="https://images.unsplash.com/photo-1695040162655-272ce0df680f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="post7">
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="thumbnail">
+                        <img src="https://plus.unsplash.com/premium_photo-1695370767476-d942b94f027c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="post8">
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="thumbnail">
+                        <img src="https://images.unsplash.com/photo-1695295445774-e669670aca78?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80" alt="post9">
+                    </div>
+                </div>
+    
+            </div>
+    
+        </div>
+
+        <!-- ________ Modal nuevo post ________ -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog"
+            aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+
+                    <h4 class="modal__title">Create a new post</h4>
+
+                    <div class="modal-body">
+                        <div class="form-group">
+                            <textarea class="form-control" id="message-text"></textarea>
+                        </div>
+                        <button type="button" class="btn btn-light btn-sm">
+                            <i class="fas fa-camera"></i>
+                        </button>
+                        <button type="button" class="btn btn-light btn-sm">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </button>
+                    </div>
+
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                        <button type="button" class="btn btn-success">Publicar</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    
+        <script src="https://kit.fontawesome.com/96b7d82f6e.js" crossorigin="anonymous"></script>
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>

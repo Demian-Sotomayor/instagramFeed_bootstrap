@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css">
+        <title>Mi feed</title>
+    </head>
+    <body>
+
+        <!-- ________ Barra de navegación ________ -->
+        <nav class="navbar fixed-top navbar-light bg-light">
+
+            <span class="navbar-brand mb-0 ml-5 h1"><i class="fab fa-instagram"></i> Instagram</span>
+            <form class="form-inline">
+                
+                <button data-toggle="modal" data-target="#exampleModal" class="btn btn-success" 
+                type="button">Create a new post</button>
+
+                <div class="btn-group">
+                    
+                    <button type="button" class="btn btn-secondary dropdown-toggle ml-3" data-toggle="dropdown" 
+                    aria-haspopup="true" aria-expanded="false">
+                        <i class="fas fa-cog"></i>
+                    </button>
+
+                    <div class="dropdown-menu dropdown-menu-right">
+                        <a class="dropdown-item" href="#">Profile</a>
+                        <a class="dropdown-item" href="#">Accesibility</a>
+                        <a class="dropdown-item" href="#">Privacy and data</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item text-danger" href="#">Log out</a>
+                    </div>
+                
+                </div>
+            </form>
+        </nav>
+
+        <!-- ________ Cambio de feed ________ -->
+        <nav aria-label="Page navigation example" class="margen">
+            <ul class="pagination justify-content-center">
+                <li class="page-item"><a class="page-link text-secondary" href="index.html">
+                    <i class="fas fa-th"></i></a>
+                </li>
+                <li class="page-item"><a class="page-link text-secondary" href="feed.html">■</a></li>
+            </ul>
+        </nav>
+
+        <!-- ________ Feed ________ -->
+        <div class="card">
+            <div class="card-header">
+                <h4 class="titulo">Supremacia</h4>
+                <button type="button" class="btn btn-link">07/12</button>
+            </div>
+            <img src="https://images.unsplash.com/photo-1695217765865-7c0a7f211de7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80" class="card-img-top" alt="post1">
+            <div class="card-body">
+                <h5 class="card-title">942 Likes</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, totam?</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <h4 class="titulo">Placeres de la vida</h4>
+                <button type="button" class="btn btn-link">04/27</button>
+            </div>
+            <img src="https://plus.unsplash.com/premium_photo-1695203199983-d061c85f0bdd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2002&q=80" class="card-img-top" alt="post2">
+            <div class="card-body">
+                <h5 class="card-title">873 Likes</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, saepe optio. Tempore delectus quidem sequi.</p>
+            </div>
+        </div>
+        <div class="card">
+                <div class="card-header">
+                    <h4 class="titulo">Menjunje medio raro</h4>
+                    <button type="button" class="btn btn-link">02/21</button>
+                </div>
+                <img src="https://images.unsplash.com/photo-1628557044797-f21a177c37ec?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80" class="card-img-top" alt="post3">
+                <div class="card-body">
+                    <h5 class="card-title">1092 Likes</h5>
+                    <p class="card-text">Pero estaba bien bueno fijate.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <h4 class="titulo">Muchos mundos, muchas historias</h4>
+                    <button type="button" class="btn btn-link">01/15</button>
+                </div>
+                <img src="https://images.unsplash.com/photo-1694679861915-e06c81b1ca04?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80" class="card-img-top" alt="post4">
+                <div class="card-body">
+                    <h5 class="card-title">567 Likes</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, quisquam!</p>
+                </div>
+            </div>
+
+        <!-- ________ Modal new post ________ -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog"
+            aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            
+            
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+
+                    <h4 class="modal__title">Create a new post</h4>
+
+                    <div class="modal-body">
+                        <div class="form-group">
+                            <textarea class="form-control" id="message-text"></textarea>
+                        </div>
+                        <button type="button" class="btn btn-light btn-sm">
+                            <i class="fas fa-camera"></i>
+                        </button>
+                        <button type="button" class="btn btn-light btn-sm">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </button>
+                    </div>
+
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                        <button type="button" class="btn btn-success">Publicar</button>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        
+        <script src="https://kit.fontawesome.com/96b7d82f6e.js" crossorigin="anonymous"></script>
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
